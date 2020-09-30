@@ -1,0 +1,76 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("Flaticon.eot");
+  src: url("Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("Flaticon.woff") format("woff"),
+       url("Flaticon.ttf") format("truetype"),
+       url("Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-baguette:before { content: "\f100"; }
+.flaticon-birthday:before { content: "\f101"; }
+.flaticon-birthday-cake:before { content: "\f102"; }
+.flaticon-birthday-cake-1:before { content: "\f103"; }
+.flaticon-birthday-cake-piece:before { content: "\f104"; }
+.flaticon-bread-basket:before { content: "\f105"; }
+.flaticon-bun:before { content: "\f106"; }
+.flaticon-cake:before { content: "\f107"; }
+.flaticon-cake-1:before { content: "\f108"; }
+.flaticon-chocolate:before { content: "\f109"; }
+.flaticon-cookies:before { content: "\f10a"; }
+.flaticon-croissant:before { content: "\f10b"; }
+.flaticon-cupcake:before { content: "\f10c"; }
+.flaticon-cupcake-1:before { content: "\f10d"; }
+.flaticon-cupcake-2:before { content: "\f10e"; }
+.flaticon-cupcake-3:before { content: "\f10f"; }
+.flaticon-cupcake-4:before { content: "\f110"; }
+.flaticon-cupcake-dessert:before { content: "\f111"; }
+.flaticon-donut:before { content: "\f112"; }
+.flaticon-doughnut:before { content: "\f113"; }
+.flaticon-electric-mixer:before { content: "\f114"; }
+.flaticon-electric-mixter:before { content: "\f115"; }
+.flaticon-food:before { content: "\f116"; }
+.flaticon-food-1:before { content: "\f117"; }
+.flaticon-food-10:before { content: "\f118"; }
+.flaticon-food-11:before { content: "\f119"; }
+.flaticon-food-12:before { content: "\f11a"; }
+.flaticon-food-13:before { content: "\f11b"; }
+.flaticon-food-2:before { content: "\f11c"; }
+.flaticon-food-3:before { content: "\f11d"; }
+.flaticon-food-4:before { content: "\f11e"; }
+.flaticon-food-5:before { content: "\f11f"; }
+.flaticon-food-6:before { content: "\f120"; }
+.flaticon-food-7:before { content: "\f121"; }
+.flaticon-food-8:before { content: "\f122"; }
+.flaticon-food-9:before { content: "\f123"; }
+.flaticon-gingerbread:before { content: "\f124"; }
+.flaticon-hamburger:before { content: "\f125"; }
+.flaticon-ice-cream:before { content: "\f126"; }
+.flaticon-ice-cream-1:before { content: "\f127"; }
+.flaticon-ice-cream-2:before { content: "\f128"; }
+.flaticon-lollipop:before { content: "\f129"; }
+.flaticon-lovely-cupcake:before { content: "\f12a"; }
+.flaticon-mint:before { content: "\f12b"; }
+.flaticon-muffin-decorated-with-a-chocolate-heart:before { content: "\f12c"; }
+.flaticon-pie:before { content: "\f12d"; }
+.flaticon-pie-1:before { content: "\f12e"; }
+.flaticon-pie-2:before { content: "\f12f"; }
+.flaticon-pizza:before { content: "\f130"; }
+.flaticon-pretzel:before { content: "\f131"; }
+.flaticon-sandwich:before { content: "\f132"; }
+.flaticon-toaster:before { content: "\f133"; }
+.flaticon-wheat:before { content: "\f134"; }
+.flaticon-whisk-and-bowl:before { content: "\f135"; }
