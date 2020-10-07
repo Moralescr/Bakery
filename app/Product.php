@@ -3,11 +3,16 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Product extends Model
 {
     protected $fillable = [
         'user_id', 'category_id', 'name', 'slug', 'excerpt', 'body', 'status', 'file'
+    ];
+
+    protected $dates = [
+        'created_at'
     ];
 
     public function user()
@@ -23,5 +28,10 @@ class Product extends Model
     public function tags()
     {
         return $this->belongsToMany(Tag::class);
+    }
+
+    public function getCreatedAtAttribute($value)
+    {
+        return Carbon::parse($value)->diffForHumans();
     }
 }

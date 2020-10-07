@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductStoreRequest;
 use App\Http\Requests\ProductUpdateRequest;
 use Illuminate\Http\Request;
-
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 
 use App\Category;

@@ -13,23 +13,24 @@ class PageController extends Controller
 {
     public function index()
     {
-        //Main page front-end
         $products = Product::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(4);
         return view('web.index', compact('products'));
     }
-    //Muestra todos los posts
+   
     public function blog(Request $request)
     {
+        $posts = Product::orderBy('created_at', 'DESC')->paginate(3);
+        $categories = Category::orderBy('id', 'DESC')->paginate(4);
+        $tags = Tag::orderBy('created_at', 'DESC')->paginate(6);
         //$name = $request->get('name');
         $products = Product::orderBy('id', 'DESC')
                ->where('status', 'PUBLISHED')
                //->name($name)
-               ->paginate(6);
+               ->paginate(3);
 
-        return view('web.products', compact('products'));
+        return view('web.products', compact('products', 'tags', 'categories', 'posts'));
     }
 
-    //Muestra los posts que pertenecen a una categoría
     public function category($slug)
     {
         $category = Category::where('slug', $slug)->pluck('id')->first();
@@ -39,8 +40,7 @@ class PageController extends Controller
 
         return view('web.products', compact('products'));
     }
-
-    //Muestra los posts que pertenecen a una etiqueta
+    
     public function tag($slug)
     {
         $products = Product::whereHas('tags', function($query) use ($slug) {
@@ -51,15 +51,14 @@ class PageController extends Controller
         return view('web.products', compact('products'));
     }
 
-    //Muestra el detalle de un post
+    // Post detail
     public function product($slug)
     {
-        //$categories = Category::orderBy('id', 'DESC')->paginate(4);
-        //$posts      = Post::orderBy('created_at', 'DESC')->paginate(3);
-        //$tags       = Tag::orderBy('created_at', 'DESC')->paginate(6);
-        $product       = Product::where('slug', $slug)->first();
+        $posts      = Product::orderBy('created_at', 'DESC')->paginate(3);
+        $categories = Category::orderBy('id', 'DESC')->paginate(4);
+        $tags       = Tag::orderBy('created_at', 'DESC')->paginate(6);
+        $product = Product::where('slug', $slug)->first();
 
-        return view('web.product', compact('product'));
-
+        return view('web.product', compact('product', 'posts', 'categories', 'tags'));
     }
 }

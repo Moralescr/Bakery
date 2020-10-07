@@ -7,6 +7,7 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
 
 class RegisterController extends Controller
 {
@@ -28,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = 'dashboard';
 
     /**
      * Create a new controller instance.
@@ -63,9 +64,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $file_extention = $data['file']->getClientOriginalExtension();
+        $file_name = 'images/'.time().rand(99,999).'file.'.$file_extention;
+        $data['file']->move(public_path('images'), $file_name);
+    
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'file' =>  $file_name,
             'password' => Hash::make($data['password']),
         ]);
     }

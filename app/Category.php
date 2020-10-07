@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Category extends Model
 {
@@ -13,5 +14,10 @@ class Category extends Model
     public function products()
     {
         return $this->hasMany(Product::class);
+    }
+
+    public function getCreatedAtAttribute($value)
+    {
+        return Carbon::parse($value)->diffForHumans();
     }
 }

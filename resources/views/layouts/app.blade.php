@@ -1,85 +1,47 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Visited Moralescr.tech">
+    <meta name="keywords" content="web app">
+    <meta name="author" content="Moralescr.">
+    <title>Welcome administrator</title>
+    @include('admin.sections.css')
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+    @include('admin.sections.navbar')
 
-                    </ul>
+    @include('admin.sections.menu')
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                           <li class="nav-item"> <a class="nav-link"  href="{{ route('tags.index') }}"> Etiquetas </a> </li>
-                           <li class="nav-item"> <a class="nav-link"  href="{{ route('categories.index') }}"> Categorías </a> </li>
-                           <li class="nav-item"> <a class="nav-link"  href="{{ route('products.index') }}"> Productos</a> </li>
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-body">
+                @yield('content')
             </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+        </div>
     </div>
-</body>
- <!-- Scripts -->
- <script src="{{ asset('js/app.js') }}"></script>
+    <!-- END: Content-->
+    
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
 
- <!--script to slug -->
-@yield('scripts')
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">Copyright &copy; 2020
+            <a class="text-bold-800 grey darken-2" href="http://moralescr.tech" target="_blank">Ales' cake,</a>All rights Reserved</span>
+            <span class="float-md-right d-none d-md-block">Developed by Moralescr. | Made with<i class="feather icon-heart pink"></i></span>
+            <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+    @include('admin.sections.js')
+    <!--script to slug -->
+    @yield('scripts')
+</body>
 </html>
