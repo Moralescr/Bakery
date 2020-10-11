@@ -18,7 +18,7 @@
                     </li>
                 </ul>
             </li>
-            <li class=" navigation-header"><span>Blog</span><span class="badge badge badge-success badge-pill float-right mr-2">Nuevo</span>
+            <li class="navigation-header"><span>Blog</span>
             </li>
             <li class=" nav-item"><a href="{{route('products.index')}}"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Email">Publicaciones</span></a>
             </li>
@@ -29,7 +29,7 @@
             <li class=" navigation-header"><span>Fotografías</span>
             </li>
             <li class=" nav-item"><a href="#"><i class="feather icon-list"></i><span class="menu-title" data-i18n="Data List">Subir fotos</span>
-               <span class="badge badge badge-primary badge-pill float-right mr-2">New</span></a>
+               <span class="badge badge badge-success badge-pill float-right mr-2">Nuevo</span></a>
             </li>
             <li class=" navigation-header"><span>Soporte</a></span><span class="badge badge badge-danger badge-pill float-right mr-2">En proceso</span>
             </li>

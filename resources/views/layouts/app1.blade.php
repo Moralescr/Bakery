@@ -7,7 +7,7 @@
    <![endif]-->
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    <meta name="description" content="">
-   <meta name="author" content="">
+   <meta name="author" content="Adrian Morales Guadamúz">
    <!-- Page title -->
    <title>Welcome - Ale's Cake</title>
    <!--[if lt IE 9]>
@@ -47,6 +47,8 @@
 
     @include('web.sections.footer')
 </body>
+    <!-- Fixed prevent scroll -->
+    <script src="{{ asset('bakery/js/fixprevent.js') }}"></script>
     <!-- Core JavaScript Files -->
     <script src="{{ asset('bakery/js/jquery.min.js') }}"></script>
     <script src="{{ asset('bakery/js/bootstrap.min.js') }}"></script>

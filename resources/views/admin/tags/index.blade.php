@@ -14,19 +14,17 @@
                 </a>
                 <h4 class="card-title">Listado de etiquetas</h4>
 
-                <table class="table table-hover-animation mb-1">
+                <table class="table table-responsive-xl table-hover-animation mb-1">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Nombre</th>
                             <th>Creado</th>
-                            <th colspan="3">Ver detalle - Editar - Eliminar</th>
+                            <th colspan="2">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($tags as $tag)
                         <tr>
-                            <td class="product-name">{{ $tag->id }}</td>
                             <td>
                                 <div class="chip chip-success">
                                     <div class="chip-body">
@@ -41,17 +39,17 @@
                                     </div>
                                 </div>
                             </td>
-                            <td width="10px">
+                            <!--<td>
                                 <a href="" class="btn btn-sm btn-info">
                                     <i class="fa fa-eye"></i>
                                 </a>
-                            </td>
-                            <td width="10px">
+                            </td>-->
+                            <td>
                                 <a href="{{ route('tags.edit', $tag->id) }}" class="btn btn-sm btn-warning">
                                     <i class="fa fa-edit"></i>
                                 </a>
                             </td>
-                            <td width="10px">
+                            <td>
                                 {!! Form::open(['route' => ['tags.destroy', $tag->id], 'method' => 'DELETE']) !!}
                                     <button class="btn btn-sm btn-danger">
                                         <i class="fa fa-trash"></i>

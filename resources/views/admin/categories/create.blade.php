@@ -5,7 +5,7 @@
 <div class="col-md-12 col-md-offset-2">
     <div class="card card-info">
         <div class="card-header">
-            <h4>Creación de una categoria</h4>
+            <h4>Crear categoria</h4>
             <a href="{{ route('categories.index') }}" class="pull-right btn btn-sm btn-danger">
                 <i class="fa fa-reply"></i> Regresar 
             </a>   

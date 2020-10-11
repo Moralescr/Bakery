@@ -33,7 +33,7 @@ class ProductController extends Controller
     {
         $products = Product::orderBy('id', 'DESC')
             ->where('user_id', auth()->user()->id)
-            ->paginate();
+            ->paginate(4);
 
         return view('admin.products.index', compact('products'));
     }

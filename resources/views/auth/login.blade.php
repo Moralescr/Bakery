@@ -75,8 +75,6 @@
                                 <a href="#" class="btn btn-facebook"><span class="fa fa-facebook"></span></a>
                                 <a href="#" class="btn btn-instagram white"><span class="fa fa-instagram"></span></a>
                                 <a href="#" class="btn btn-google"><span class="fa fa-youtube"></span></a>
-                                <a href="#" class="btn btn-twitter white"><span class="fa fa-twitter"></span></a>
-                                <a href="#" class="btn btn-github"><span class="fa fa-github-alt"></span></a>
                             </div>
                         </div>
                     </div>

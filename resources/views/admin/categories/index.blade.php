@@ -14,19 +14,17 @@
             </a>
             <h4 class="card-title">Listado de categorias</h4>
 
-            <table class="table table-hover-animation mb-1">
+            <table class="table table-responsive-xl table-hover-animation mb-1">
                 <thead>
                     <tr>
-                        <th width="10px">ID</th>
                         <th>Nombre</th>
                         <th>Creado</th>
-                        <th colspan="3">Ver detalle - Editar - Eliminar</th>
+                        <th colspan="3">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach($categories as $category)
                     <tr>
-                        <td>{{ $category->id }}</td>
                         <td>{{ $category->name }}</td>
                         <td>
                             <div class="chip chip-danger">
@@ -35,17 +33,17 @@
                                 </div>
                             </div>
                         </td>
-                        <td width="10px">
+                        <td>
                             <a href="{{ route('categories.show', $category->id) }}" class="btn btn-sm btn-info">
                                 <i class="fa fa-eye"></i>
                             </a>
                         </td>
-                        <td width="10px">
+                        <td>
                             <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-sm btn-warning">
                                 <i class="fa fa-edit"></i> 
                             </a>
                         </td>
-                        <td width="10px">
+                        <td>
                             {!! Form::open(['route' => ['categories.destroy', $category->id], 'method' => 'DELETE']) !!}
                                 <button class="btn btn-sm btn-danger">
                                     <i class="fa fa-trash"></i>

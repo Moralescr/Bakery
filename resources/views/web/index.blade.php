@@ -338,7 +338,8 @@
                      </div>
                      <div class="info">
                         <h5>Opciones saludables</h5>
-                        <p>Lorem Ipsuet ipsu Ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac sodales felis tiam non.</p>
+                        <p>Postres compuestos por ingredientes nutritivos, integrales y lo más naturales posible,
+                           disfrutas de lo que comes sin preocuparte tanto.</p>
                         <!-- Button -->
                         <div class="page-scroll">
                            <a class="btn" href="#contact">
@@ -408,10 +409,10 @@
                   </div>
                   <div class="testimonial-content">
                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed accumsan diam. Suspendisse molestie nibh at tempor mollis. Integer aliquet facilisis felis, ac porta est cursus et. Vestibulum sollicitudin nisl ut urna egestas faucibus.
+                        En un principio me encantó porque puedes personalizar el postre a gusto, después que los probé quede enamorado, muy recomendados.
                      </p>
                      <h3 class="testimonial-title">Lana King</h3>
-                     <small class="post">/ TV Star</small>
+                     <small class="post">/ Nutricionsita</small>
                   </div>
                </div>
                <!-- Testimonial 2 -->
@@ -421,23 +422,10 @@
                   </div>
                   <div class="testimonial-content">
                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed accumsan diam. Suspendisse molestie nibh at tempor mollis. Integer aliquet facilisis felis, ac porta est cursus et. Vestibulum sollicitudin nisl ut urna egestas faucibus.
+                        En un principio me encantó porque puedes personalizar el postre a gusto, después que los probé quede enamorado, muy recomendados.
                      </p>
                      <h3 class="testimonial-title">Adrián Morales</h3>
-                     <small class="post">/ Engineer</small>
-                  </div>
-               </div>
-               <!-- Testimonial 3 -->
-               <div class="testimonial">
-                  <div class="testimonial-pic">
-                     <img src="bakery/img/testimonial3.jpg" alt="" class="img-circle">
-                  </div>
-                  <div class="testimonial-content">
-                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed accumsan diam. Suspendisse molestie nibh at tempor mollis. Integer aliquet facilisis felis, ac porta est cursus et. Vestibulum sollicitudin nisl ut urna egestas faucibus.
-                     </p>
-                     <h3 class="testimonial-title">Maria Silva</h3>
-                     <small class="post">/ Cake Specialist</small>
+                     <small class="post">/ Ingeniero</small>
                   </div>
                </div>
             </div>
@@ -524,8 +512,8 @@
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
                <li class="active"><a href="#tab1" data-toggle="tab">Cakes</a></li>
-               <li><a href="#tab2" data-toggle="tab">Pastries</a></li>
-               <li><a href="#tab3" data-toggle="tab">Sweets</a></li>
+               <li><a href="#tab2" data-toggle="tab">Otros</a></li>
+               <!--<li><a href="#tab3" data-toggle="tab">Pie</a></li>-->
             </ul>
          </div>
          <div class="col-md-12 no-padding">
@@ -534,11 +522,11 @@
                <div class="tab-pane active in fade" id="tab1">
                   <div class="row">
                      <!-- Menu: Cakes-->
-                     <h3>Cakes & Pies</h3>
+                     <h3>Cakes & Pie</h3>
                      <!-- column -->
                      <div class="col-md-6">
                         <div class="polaroid">
-                           <p>Our famous Forest Cake</p>
+                           <p>Queque de leche condesada</p>
                            <img src="bakery/img/menu1.jpg" alt="" class="img-responsive center-block" />
                         </div>
                      </div>
@@ -550,29 +538,43 @@
                               <!-- Item starts -->
                               <div class="menu-item">
                                  <div class="menu-item-name">
-                                    CheeseCake
+                                    Queque de higos con leche condensada.
                                  </div>
                                  <div class="menu-item-price">
-                                    $5.5
+                                   
                                  </div>
                                  <div class="menu-item-description">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                     ☆☆☆☆☆
                                  </div>
                               </div>
                               <!-- Item ends -->
-                              <!-- Item starts -->
-                              <div class="menu-item">
+                                 <!-- Item starts -->
+                                 <div class="menu-item">
                                  <div class="menu-item-name">
-                                    Vanilla Cake
+                                    Queque de chocolate con mermelada de fresas
                                  </div>
                                  <div class="menu-item-price">
-                                    $11
+                                   
                                  </div>
                                  <div class="menu-item-description">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                     ☆☆☆☆☆
                                  </div>
                               </div>
-                              <!-- Item ends -->	                                                        
+                              <!-- Item ends -->
+                                 <!-- Item starts -->
+                                 <div class="menu-item">
+                                 <div class="menu-item-name">
+                                    Pie de Limón, Pie de manzana
+                                 </div>
+                                 <div class="menu-item-price">
+                                   
+                                 </div>
+                                 <div class="menu-item-description">
+                                     ☆☆☆☆☆
+                                 </div>
+                              </div>
+                              <!-- Item ends -->
+                          	                                                        
                            </div>
                            <!--/ menu section -->
                         </div>
@@ -586,7 +588,7 @@
                <div class="tab-pane fade" id="tab2">
                   <div class="row">
                      <!-- Menu: Pastries-->
-                     <h3>Pastries</h3>
+                     <h3>Cupcakes & otros</h3>
                      <!-- column -->
                      <div class="col-md-6">
                         <div class="polaroid">
@@ -602,81 +604,42 @@
                               <!-- Item starts -->
                               <div class="menu-item">
                                  <div class="menu-item-name">
-                                    CheeseCake
+                                    Tres leches de Chocolate
                                  </div>
                                  <div class="menu-item-price">
-                                    $5.5
+                                   
                                  </div>
                                  <div class="menu-item-description">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                     ☆☆☆☆☆
                                  </div>
                               </div>
                               <!-- Item ends -->
-                              <!-- Item starts -->
-                              <div class="menu-item">
+                               <!-- Item starts -->
+                               <div class="menu-item">
                                  <div class="menu-item-name">
-                                    Vanilla Cake
+                                    Chilenitas, suspiros, cupcakes de chocolate
                                  </div>
                                  <div class="menu-item-price">
-                                    $11
+                                   
                                  </div>
                                  <div class="menu-item-description">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                     ☆☆☆☆☆
                                  </div>
                               </div>
                               <!-- Item ends -->
-                           </div>
-                           <!--/ menu section -->
-                        </div>
-                        <!-- / menu body -->
-                     </div>
-                     <!-- /col-md-6 -->				  
-                  </div>
-                  <!-- /.row -->
-               </div>
-               <!-- /tab-pane -->
-               <div class="tab-pane fade" id="tab3">
-                  <div class="row">
-                     <!-- Menu: Sweets-->
-                     <h3>Sweets</h3>
-                     <!-- column -->
-                     <div class="col-md-6">
-                        <div class="polaroid">
-                           <p>Chocolate Truffles</p>
-                           <img src="bakery/img/menu3.jpg" alt="" class="img-responsive center-block" />
-                        </div>
-                     </div>
-                     <!-- /col-md-6 -->	
-                     <!-- column -->
-                     <div class="col-md-6">
-                        <div class="menu-body">
-                           <div class="menu-section">
-                              <!-- Item starts -->
-                              <div class="menu-item">
+                                 <!-- Item starts -->
+                                 <div class="menu-item">
                                  <div class="menu-item-name">
-                                    CheeseCake
+                                    Chescake de fresa & tortas chilenas
                                  </div>
                                  <div class="menu-item-price">
-                                    $5.5
+                                   
                                  </div>
                                  <div class="menu-item-description">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                     ☆☆☆☆☆
                                  </div>
                               </div>
                               <!-- Item ends -->
-                              <!-- Item starts -->
-                              <div class="menu-item">
-                                 <div class="menu-item-name">
-                                    Vanilla Cake
-                                 </div>
-                                 <div class="menu-item-price">
-                                    $11
-                                 </div>
-                                 <div class="menu-item-description">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
-                                 </div>
-                              </div>
-                              <!-- Item ends -->				                                                        
                            </div>
                            <!--/ menu section -->
                         </div>
@@ -728,81 +691,6 @@
 </section>
 <!-- /Section -->
 
-<!-- Section Gallery -->
-<section id="gallery" class="color-section2">
-   <div class="container">
-         <!-- Section Heading -->
-         <div class="section-heading">
-            <h2>Nuestro equipo</h2>
-            <div class="hr"></div>
-         </div>
-         <div id="owl-team" class="owl-carousel">
-            <!-- Team member 1 -->	
-            <div class="team-member">
-               <div class="profile-image img-zoom">
-                  <img src="bakery/img/team1.jpg" alt="" />
-               </div>
-               <div class="team-caption">
-                  <h4>Alejandra Mora</h4>
-                  <h6>Fundadora</h6>
-                  <p>Ibu lum orci eget liquam erat volut pat phas ellus ac sodales felis commolu ptatemp dolupta orem retibusam.</p>
-                  <!--Social icons -->	
-                  <div class="social-media smaller">
-                     <a href="#" title=""><i class="fa fa-twitter"></i></a>
-                     <a href="#" title=""><i class="fa fa-facebook"></i></a>
-                     <a href="#" title=""><i class="fa fa-linkedin"></i></a>
-                     <a href="#" title=""><i class="fa fa-pinterest"></i></a>
-                     <a href="#" title=""><i class="fa fa-instagram"></i></a>
-                  </div>
-               </div>
-            </div>
-            <!--/team member ends-->
-            <!-- Team member 2 -->	
-            <div class="team-member">
-               <div class="profile-image img-zoom">
-                  <img src="bakery/img/team2.jpg" alt="" />
-               </div>
-               <div class="team-caption">
-                  <h4>John Smith</h4>
-                  <h6>Cake Expert</h6>
-                  <p>Ibu lum orci eget liquam erat volut pat phas ellus ac sodales felis commolu ptatemp dolupta orem retibusam.</p>
-                  <!--Social icons -->	
-                  <div class="social-media smaller">
-                     <a href="#" title=""><i class="fa fa-twitter"></i></a>
-                     <a href="#" title=""><i class="fa fa-facebook"></i></a>
-                     <a href="#" title=""><i class="fa fa-linkedin"></i></a>
-                     <a href="#" title=""><i class="fa fa-pinterest"></i></a>
-                     <a href="#" title=""><i class="fa fa-instagram"></i></a>
-                  </div>
-               </div>
-            </div>
-            <!--/team member ends-->
-            <!-- Team member 3 -->	
-            <div class="team-member">
-               <div class="profile-image img-zoom">
-                  <img src="bakery/img/team3.jpg" alt="" />
-               </div>
-               <div class="team-caption">
-                  <h4>Lilian Doe</h4>
-                  <h6>Master Baker</h6>
-                  <p>Ibu lum orci eget liquam erat volut pat phas ellus ac sodales felis commolu ptatemp dolupta orem retibusam.</p>
-                  <!--Social icons -->	
-                  <div class="social-media smaller">
-                     <a href="#" title=""><i class="fa fa-twitter"></i></a>
-                     <a href="#" title=""><i class="fa fa-facebook"></i></a>
-                     <a href="#" title=""><i class="fa fa-linkedin"></i></a>
-                     <a href="#" title=""><i class="fa fa-pinterest"></i></a>
-                     <a href="#" title=""><i class="fa fa-instagram"></i></a>
-                  </div>
-               </div>
-            </div>
-            <!--/team member ends-->
-         </div>
-   </div>
-   <!-- /container -->
-</section>
-<!-- /section -->
-   
 <!-- Section Prices -->	
 <section id="prices">
    <div class="container hidden">		
@@ -855,4 +743,5 @@ data-100-start="transform:rotate(-0deg); right:3%;"
    <div id="map-canvas"></div>
 </div>
 <!--/map-->
+
 @endsection

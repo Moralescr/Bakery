@@ -6,7 +6,7 @@
     <div class="col-md-12 col-md-offset-2">
         <div class="card card-info">
              <div class="card-header">
-                <h4>Creación de una etiqueta</h4>
+                <h4>Crear etiqueta</h4>
                 <a href="{{ route('tags.index') }}" class="pull-right btn btn-sm btn-danger">
                     <i class="fa fa-reply"></i> Regresar 
                 </a>
