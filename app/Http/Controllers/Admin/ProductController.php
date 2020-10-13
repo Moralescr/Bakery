@@ -29,6 +29,10 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function dashboard()
+    {
+        return view('admin.sections.dashboard');
+    }
     public function index()
     {
         $products = Product::orderBy('id', 'DESC')

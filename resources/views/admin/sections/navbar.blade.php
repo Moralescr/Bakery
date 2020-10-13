@@ -4,17 +4,9 @@
         <div class="navbar-container content">
             <div class="navbar-collapse" id="navbar-mobile">
                 <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
-                    </ul>
                     <ul class="nav navbar-nav bookmark-icons">
-                        <!-- li.nav-item.mobile-menu.d-xl-none.mr-auto-->
-                        <!--   a.nav-link.nav-menu-main.menu-toggle.hidden-xs(href='#')-->
-                        <!--     i.ficon.feather.icon-menu-->
-                        <!--<li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon feather icon-check-square"></i></a></li>
-                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>-->
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
                         <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Mensajes"><i class="ficon feather icon-heart"></i></a></li>
-                        <!--<li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon feather icon-calendar"></i></a></li>-->
                     </ul>
                     <ul class="nav navbar-nav">
                         <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon feather icon-star warning"></i></a>
@@ -23,11 +15,6 @@
                                 <input class="form-control input" type="text" placeholder="Buscar..." tabindex="0" data-search="template-list">
                                 <ul class="search-list search-list-bookmark"></ul>
                             </div>
-                            <!-- select.bookmark-select-->
-                            <!--   option Chat-->
-                            <!--   option email-->
-                            <!--   option todo-->
-                            <!--   option Calendar-->
                         </li>
                     </ul>
                 </div>
@@ -36,8 +23,6 @@
                         <div class="dropdown-menu" aria-labelledby="dropdown-flag">
                           <a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a>
                             <a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-es"></i> Español</a>
-                        <!--<a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a>
-                            <a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a>-->
                         </div>
                     </li>
                     <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon feather icon-maximize"></i></a></li>
@@ -80,7 +65,7 @@
                         </ul>
                     </li>
                     <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                            <div class="user-nav d-sm-flex d-none">
+                           <div class="user-nav d-sm-flex d-none">
                                 <span class="user-name text-bold-600"> {{ Auth::user()->name }} <span class="caret"></span></span>
                                
                                 <span class="user-status fa fa-circle text-success"> En línea</span>
