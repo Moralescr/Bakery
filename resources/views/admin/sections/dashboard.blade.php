@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-
 <!-- Dashboard Analytics Start -->
 <section id="dashboard-analytics">
     <div class="row">

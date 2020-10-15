@@ -22,10 +22,7 @@ Route::get('category/{slug}', 'Web\PageController@category')->name('category');
 Route::get('tag/{slug}', 'Web\PageController@tag')->name('tag');
 
 //Administration routes
-Route::get('dashboard', function () {
-    return view('admin.sections.dashboard');
-})->name('dashboard');
 Route::resource('tags', 'Admin\TagController');
 Route::resource('categories', 'Admin\CategoryController');
 Route::resource('products', 'Admin\ProductController');
-
+Route::get('dashboard', 'Admin\ProductController@dashboard')->name('dashboard');

@@ -69,12 +69,7 @@
                         </div>
                         <div class="login-footer">
                             <div class="divider">
-                                <div class="divider-text">Redes sociales</div>
-                            </div>
-                            <div class="footer-btn d-inline">
-                                <a href="#" class="btn btn-facebook"><span class="fa fa-facebook"></span></a>
-                                <a href="#" class="btn btn-instagram white"><span class="fa fa-instagram"></span></a>
-                                <a href="#" class="btn btn-google"><span class="fa fa-youtube"></span></a>
+                                <!--<div class="divider-text">Redes sociales</div>-->
                             </div>
                         </div>
                     </div>
