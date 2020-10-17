@@ -1016,7 +1016,12 @@ ul.slider-pagi {padding-left:0px;}
 ============================ */
 
 #promo{
-	background-image: url(../img/bgpromo.jpg);
+
+	background-image: url(../img/caketopbg.png);
+}
+
+	/*background-image: url(../img/bgpromo.jpg);
+	background-color: #606060;
 	background-size:cover;
 	background-position:center;  
 	background-repeat:no-repeat;

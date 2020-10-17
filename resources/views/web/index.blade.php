@@ -328,32 +328,6 @@
                <!-- /box_icon -->
             </div>
             <!-- /col-xs-12 ends -->
-            <!-- Box 5 -->
-            <div class="col-xs-12">
-               <div class="box_icon">
-                  <div class="icon">
-                     <!-- image -->
-                     <div class="image"> 
-                        <img class="img-responsive img-circle" src="bakery/img/service5.jpg" alt="">
-                     </div>
-                     <div class="info">
-                        <h5>Opciones saludables</h5>
-                        <p>Postres compuestos por ingredientes nutritivos, integrales y lo más naturales posible,
-                           disfrutas de lo que comes sin preocuparte tanto.</p>
-                        <!-- Button -->
-                        <div class="page-scroll">
-                           <a class="btn" href="#contact">
-                              <div class="btn-line"></div>
-                              <div class="btn-line btn-line-shift"></div>
-                              Más información
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- /box_icon -->
-            </div>
-            <!-- /col-xs-12 ends -->
          </div>
          <!-- /carousel -->
       </div>
@@ -409,10 +383,10 @@
                   </div>
                   <div class="testimonial-content">
                      <p class="description">
-                        En un principio me encantó porque puedes personalizar el postre a gusto, después que los probé quede enamorado, muy recomendados.
+                        Me encantan demasiado, soy muy fan de degustar diversos postres pero desde que probé estos no los cambiaría.
                      </p>
-                     <h3 class="testimonial-title">Lana King</h3>
-                     <small class="post">/ Nutricionsita</small>
+                     <h3 class="testimonial-title">Monica Sánchez</h3>
+                     <small class="post">/ Doctora</small>
                   </div>
                </div>
                <!-- Testimonial 2 -->
@@ -422,7 +396,7 @@
                   </div>
                   <div class="testimonial-content">
                      <p class="description">
-                        En un principio me encantó porque puedes personalizar el postre a gusto, después que los probé quede enamorado, muy recomendados.
+                        Postres con un sabor único, además siempre buscan que uno como cliente quede satisfecho; muy recomendados.
                      </p>
                      <h3 class="testimonial-title">Adrián Morales</h3>
                      <small class="post">/ Ingeniero</small>
@@ -498,6 +472,7 @@
 </section>
 <!--/section -->
 
+
 <!-- Section Menu --> 
 <section id="menu" class="color-section2">
    <div class="container">
@@ -511,7 +486,7 @@
             <!-- required for floating -->
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
-               <li class="active"><a href="#tab1" data-toggle="tab">Cakes</a></li>
+               <li class="active"><a href="#tab1" data-toggle="tab">Queque</a></li>
                <li><a href="#tab2" data-toggle="tab">Otros</a></li>
                <!--<li><a href="#tab3" data-toggle="tab">Pie</a></li>-->
             </ul>
@@ -522,11 +497,11 @@
                <div class="tab-pane active in fade" id="tab1">
                   <div class="row">
                      <!-- Menu: Cakes-->
-                     <h3>Cakes & Pie</h3>
+                     <h3>Queques & Pie</h3>
                      <!-- column -->
                      <div class="col-md-6">
                         <div class="polaroid">
-                           <p>Queque de leche condesada</p>
+                           <p>Queque de chocolate</p>
                            <img src="bakery/img/menu1.jpg" alt="" class="img-responsive center-block" />
                         </div>
                      </div>
@@ -592,7 +567,7 @@
                      <!-- column -->
                      <div class="col-md-6">
                         <div class="polaroid">
-                           <p>Delicious Pastries</p>
+                           <p>Cupcakes, Chilenitas</p>
                            <img src="bakery/img/menu2.jpg" alt="" class="img-responsive center-block" />
                         </div>
                      </div>
@@ -699,8 +674,8 @@
 </section>
 <!-- / section-->
 
-   <!-- Section Newsletter-->
-   <section id="newsletter" class="color-section hidden" data-0="background-position:0px -40px;" data-end="background-position:1000px -40px;">
+<!-- Section Newsletter-->
+<section id="newsletter" class="color-section hidden" data-0="background-position:0px -40px;" data-end="background-position:1000px -40px;">
    <div class="container">
    </div>
    <!-- /.container -->
@@ -710,6 +685,7 @@
 <!-- Section Promo -->	
 <section id="promo">
    <div class="container">
+       <h3>Muchas gracias por su visita a nuestra página, regrese pronto!</h3>
    </div>
    <!-- /.container -->
 </section>
