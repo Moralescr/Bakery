@@ -1,9 +1,5 @@
 /*
-Template Name: Piece of Cake
-Author: Ingrid Kuhn
-Author URI: themeforest/user/ingridk
-Version: 1.0
-Last change:02/22/2017 
+Last change:02/22/2020
 
 	Table of Contents
 
@@ -287,7 +283,7 @@ a:focus {text-decoration: none;}
 }
 
 .navbar-brand img {
-	max-width: 230px;
+	max-width: 300px;
     position: absolute;
     left: 0;
     right: 0;

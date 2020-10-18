@@ -13,52 +13,57 @@ class PageController extends Controller
 {
     public function index()
     {
-        $products = Product::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(4);
-        return view('web.index', compact('products'));
+        //Show main page of web page
+        $posts = Product::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(4);
+        return view('web.index', compact('posts'));
     }
    
     public function blog(Request $request)
-    {
-        $posts = Product::orderBy('created_at', 'DESC')->paginate(3);
+    {   
+         //$posts = Product::orderBy('created_at', 'DESC')->paginate(3);
+        //Show the blog of web page. 
         $categories = Category::orderBy('id', 'DESC')->paginate(4);
         $tags = Tag::orderBy('created_at', 'DESC')->paginate(6);
         //$name = $request->get('name');
-        $products = Product::orderBy('id', 'DESC')
+        $posts = Product::orderBy('id', 'DESC')
                ->where('status', 'PUBLISHED')
                //->name($name)
                ->paginate(3);
 
-        return view('web.products', compact('products', 'tags', 'categories', 'posts'));
+        return view('web.products', compact('posts', 'tags', 'categories'));
     }
 
     public function category($slug)
-    {
+    {           
         $category = Category::where('slug', $slug)->pluck('id')->first();
-
-        $products = Product::where('category_id', $category)
+        
+        $posts = Product::where('category_id', $category)
             ->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(3);
-
-        return view('web.products', compact('products'));
+        
+        return view('web.products', compact('posts', 'tags', 'categories'));
     }
     
     public function tag($slug)
     {
-        $products = Product::whereHas('tags', function($query) use ($slug) {
+        $posts = Product::whereHas('tags', function($query) use ($slug) {
             $query->where('slug', $slug);
         })
         ->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(3);
 
-        return view('web.products', compact('products'));
+        return view('web.products', compact('posts', 'tags', 'categories'));
     }
 
     // Post detail
     public function product($slug)
     {
+        //Queries from sidebar
         $posts      = Product::orderBy('created_at', 'DESC')->paginate(3);
-        $categories = Category::orderBy('id', 'DESC')->paginate(4);
         $tags       = Tag::orderBy('created_at', 'DESC')->paginate(6);
-        $product = Product::where('slug', $slug)->first();
+        $categories = Category::orderBy('id', 'DESC')->paginate(4);
 
-        return view('web.product', compact('product', 'posts', 'categories', 'tags'));
+        //Query to show a post detail about URL 
+        $post  = Product::where('slug', $slug)->first();
+
+        return view('web.product', compact('posts', 'post', 'categories', 'tags'));
     }
 }

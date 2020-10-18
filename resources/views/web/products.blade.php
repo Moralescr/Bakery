@@ -12,62 +12,65 @@
     </ul>
     <!-- /breadcrumb --> 
     </div>
-    <div class="container">
-    <div class="row">
-        <!-- Blog Home -->
-        <div class="col-md-8">
-            <div class="row">
-                @foreach($products as $product)
-                <!-- Blog Post 1 -->
-                <div class="blog-post col-md-12">
-                <!-- blog image -->
-                <div class="img-zoom">
-                    @if($product->file)
-                       <a href="{{ route('post', $product->slug) }}">
-                          <img class="img-responsive" src="{{ $product->file }}" alt="">
-                      </a>
-                    @endif
-                </div>
-                <!-- post info -->
-                <div class="post-review">
-                    <!-- Comments -->
-                    <ul class="post-comment">
-                        <li>28<small>Oct</small></li>
-                        <li><i class="fa fa-comments-o"></i><a href="#"><small>12</small></a></li>
-                    </ul>
-                    <!-- Title -->
-                    <h4 class="post-title">
-                        <a href="{{ route('post', $product->slug) }}">{{ $product->name }}</a>
-                    </h4>
-                    <!-- Description -->
-                    <p class="post-description">
-                        {{ $product->excerpt }}
-                    </p>
-                    <!-- Button -->
-                    <div class="text-center page-scroll">
-                        <a class="btn" href="{{ route('post', $product->slug) }}">
-                            <div class="btn-line"></div>
-                            <div class="btn-line btn-line-shift"></div>
-                            Read More
+    <!-- Section Blogprev --> 
+<section id="blog-preview">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div id="owl-blog" class="owl-carousel">
+            @foreach($posts as $post)
+               <!-- Blog Post 4 -->
+               <div class="blog-post">
+                  <!-- blog image -->
+                  <div class="img-zoom">
+                     <a href="blog-post.html">
+                     <img class="img-responsive" src="bakery/img/blog4.jpg" alt="">
+                     </a>
+                  </div>
+                  <!-- post info -->
+                  <div class="post-review">
+                     <!-- Comments -->
+                     <ul class="post-comment">
+                        <li>
+                            {{\Carbon\Carbon::parse($post->created_at)->isoformat('DD')}}
+                            <small>{{\Carbon\Carbon::parse($post->created_at)->isoformat('MMMM')}}</small>
+                        </li>
+                        <li><i class="fa fa-comments-o"></i><a href="#"><small>0</small></a></li>
+                     </ul>
+                     <!-- Title -->
+                     <h4 class="post-title">
+                        <a href="{{route('post', $post->slug)}}">{{$post->name}}</a>
+                     </h4>
+                     <!-- Description -->
+                     <p class="post-description">
+                        {{$post->excerpt}}
+                     </p>
+                     <!-- Button -->
+                     <div class="text-center page-scroll">
+                        <a class="btn" href="{{ route('post', $post->slug)}}">
+                           <div class="btn-line"></div>
+                           <div class="btn-line btn-line-shift"></div>
+                           Leer más
                         </a>
-                    </div>
-                </div>
-                <!-- /Post-review -->
-                </div>
-                <!-- /blog-post-->
-                @endforeach
+                     </div>
+                  </div>
+                  <!-- /Post-review -->
+               </div>
+               <!-- /blog-post-->
+               @endforeach					 
             </div>
-            <!-- /row-->                  
-        </div>
-        <!-- /col-md-8 -->
-        
-        @include('web.sections.sidebar')
-        <!-- Pagination -->
-        {{ $products->render() }} 
-    </div>
-    <!-- /row --> 
-    </div>
-    <!-- /container-->
+            <!--/owl-blog -->
+         </div>
+         <!--/col-md-12 -->
+      </div>
+      <!--/row -->
+      <!-- Pagination -->
+      {{ $posts->render() }} 
+   </div>
+   <!--/container -->
+</section>
+<!--/section -->
+
 </section>
 <!-- /Section ends -->
 @endsection

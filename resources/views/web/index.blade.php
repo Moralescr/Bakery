@@ -424,7 +424,7 @@
       <div class="row">
          <div class="col-md-12">
             <div id="owl-blog" class="owl-carousel">
-            @foreach($products as $product)
+            @foreach($posts as $post)
                <!-- Blog Post 4 -->
                <div class="blog-post">
                   <!-- blog image -->
@@ -437,23 +437,26 @@
                   <div class="post-review">
                      <!-- Comments -->
                      <ul class="post-comment">
-                        <li>12<small>sep</small></li>
-                        <li><i class="fa fa-comments-o"></i><a href="blog-post.html"><small>12</small></a></li>
+                        <li>
+                            {{\Carbon\Carbon::parse($post->created_at)->isoformat('DD')}}
+                            <small>{{\Carbon\Carbon::parse($post->created_at)->isoformat('MMMM')}}</small>
+                        </li>
+                        <li><i class="fa fa-comments-o"></i><a href="blog-post.html"><small>0</small></a></li>
                      </ul>
                      <!-- Title -->
                      <h4 class="post-title">
-                        <a href="blog-post.html">French pastries</a>
+                        <a href="{{ route('post', $post->slug)}}">{{$post->name}}</a>
                      </h4>
                      <!-- Description -->
                      <p class="post-description">
-                        Lorem ipsum dolor sit amet lipsum, consectetur adipiscing elit. Morbi orem rhoncus orci elit...
+                        {{$post->excerpt}}
                      </p>
                      <!-- Button -->
                      <div class="text-center page-scroll">
-                        <a class="btn" href="blog-post.html">
+                        <a class="btn" href="{{ route('post', $post->slug)}}">
                            <div class="btn-line"></div>
                            <div class="btn-line btn-line-shift"></div>
-                           Read More
+                           Leer más
                         </a>
                      </div>
                   </div>
@@ -486,7 +489,7 @@
             <!-- required for floating -->
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
-               <li class="active"><a href="#tab1" data-toggle="tab">Queque</a></li>
+               <li class="active"><a href="#tab1" data-toggle="tab">Cake</a></li>
                <li><a href="#tab2" data-toggle="tab">Otros</a></li>
                <!--<li><a href="#tab3" data-toggle="tab">Pie</a></li>-->
             </ul>
@@ -497,7 +500,7 @@
                <div class="tab-pane active in fade" id="tab1">
                   <div class="row">
                      <!-- Menu: Cakes-->
-                     <h3>Queques & Pie</h3>
+                     <h3>Cakes & Pie</h3>
                      <!-- column -->
                      <div class="col-md-6">
                         <div class="polaroid">
@@ -684,8 +687,8 @@
 
 <!-- Section Promo -->	
 <section id="promo">
-   <div class="container">
-       <h3>Muchas gracias por su visita a nuestra página, regrese pronto!</h3>
+   <div class="container text-center">
+       <h3>"Nuestro ingrediente secreto siempre es el amor"</h3>
    </div>
    <!-- /.container -->
 </section>

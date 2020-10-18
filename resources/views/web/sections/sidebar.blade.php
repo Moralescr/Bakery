@@ -35,7 +35,7 @@
         <div class="panel-body">
             <ul class="media-list">
                 @foreach($posts as $post)
-                <!-- popular post 1 -->   
+                <!-- popular product 1 -->   
                 <li class="media">
                 <div class="media-left">
                     @if($post->file)
@@ -43,7 +43,7 @@
                     @endif
                 </div>
                 <div class="media-body">
-                    <a href="blog-post.html">
+                    <a href="{{route('post', $post->slug)}}">
                         <h6 class="media-heading">
                             {{ $post->name }}
                         </h6>
@@ -69,7 +69,7 @@
         <div class="row">
         <ul class="list-unstyled">
             @foreach($categories as $category)
-            <li><a href="#">{{ $category->name }}</a>
+            <li><a href="{{ route('category', $category->slug) }}">{{ $category->name }}</a>
             </li>
             @endforeach
         </ul>
@@ -87,7 +87,7 @@
         <h5>Etiquetas</h5>
         <div class="blog-tags">
             @foreach($tags as $tag)
-                <a href="#">{{ $tag->name }}</a> 
+                <a href="{{route('tag', $tag->slug)}}">{{ $tag->name }}</a> 
             @endforeach
         </div>
     </div>

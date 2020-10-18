@@ -8,7 +8,7 @@
         </button>
         <!-- Logo -->
         <div class="navbar-brand page-scroll">
-            <a href="#page-top"><img src="{{ asset('bakery/img/logo.png') }}"  alt=""></a>
+            <a href="{{route('index')}}"><img src="{{ asset('bakery/img/logo.png') }}"  alt=""></a>
         </div>
     </div>
     <!-- /.navbar-header -->

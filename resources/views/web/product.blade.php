@@ -19,23 +19,23 @@
             <!-- Content Row -->
             <div class="row">
                 <div class="blog-post post-main">
-                <h2>{{ $product->name }}</h2>
+                <h2>{{ $post->name }}</h2>
                 <!-- Post Info -->
                 <div class="post-info">
-                    <p><i class="fa fa-clock-o"></i>Fecha: {{\Carbon\Carbon::parse($product->created_at)->isoformat('DD-MMMM-YYYY')}} </p>
-                    <p><i class="fa fa-user"></i>Por <a href="#">{{ $product->user->name }}</a></p>
+                    <p><i class="fa fa-clock-o"></i>Fecha: {{\Carbon\Carbon::parse($post->created_at)->isoformat('DD-MMMM-YYYY')}} </p>
+                    <p><i class="fa fa-user"></i>Por <a href="#">{{ $post->user->name }}</a></p>
                     <!-- Post Comments -->
-                    <p><i class="fa fa-comment"></i>3 Comments</p>
+                    <p><i class="fa fa-comment"></i>0 Comments</p>
                 </div>
                 <!-- Image -->
-                @if($product->file)
-                <img class="img-responsive img-rounded" src="{{ $product->file }}" alt="">
+                @if($post->file)
+                <img class="img-responsive img-rounded" src="{{ $post->file }}" alt="">
                 @endif
                 <div class="post-info">
                     <!-- Tags -->
                     <div class="blog-tags">
                         <p><i class="fa fa-tags"></i>Etiquetas:</p>
-                        @foreach($product->tags as $tag)
+                        @foreach($post->tags as $tag)
                         <a href="{{ route('tag', $tag->slug) }}">{{ $tag->name }}</a> 
                         @endforeach
                     </div>
@@ -44,10 +44,10 @@
                 <!-- Post Content -->
                 <blockquote>Men dolor sit amet, consectetur adipisiras sit amet nibh libero, in gravida nulla ulla vel metus scelerisque ante sollicitudin commodo cras purus.</blockquote>
                 <p>
-                    {{ $product->excerpt}}
+                    {{ $post->excerpt}}
                 </p>
                 <p>
-                   {!! $product->body !!}
+                   {!! $post->body !!}
                 </p>
                 </div>
                 <!-- /blog-post -->
