@@ -40,7 +40,7 @@ class PageController extends Controller
         $posts = Product::where('category_id', $category)
             ->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(3);
         
-        return view('web.products', compact('posts', 'tags', 'categories'));
+        return view('web.products', compact('posts'));
     }
     
     public function tag($slug)
@@ -50,7 +50,7 @@ class PageController extends Controller
         })
         ->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(3);
 
-        return view('web.products', compact('posts', 'tags', 'categories'));
+        return view('web.products', compact('posts'));
     }
 
     // Post detail
