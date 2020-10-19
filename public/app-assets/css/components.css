@@ -172,7 +172,7 @@ html body[data-col='1-column'] .content, html body[data-col='1-column'] .footer 
   margin-left : 0 !important;
 }
 html .pace .pace-progress {
-  background : #7367F0;
+  background : #d62350;
 }
 
 .app-content.center-layout {
@@ -752,7 +752,7 @@ body.fixed-footer footer.footer-dark {
   width : 35px;
 }
 .main-menu .navbar-header .navbar-brand .brand-text {
-  color : #7367F0;
+  color : #d62350;
   padding-left : 1rem;
   font-weight : 600;
   letter-spacing : 0.01rem;
@@ -1927,7 +1927,7 @@ body.fixed-footer .main-menu.menu-fixed {
   border : 1px solid rgba(0, 0, 0, 0.2);
 }
 .navbar-container .bookmark-input input:focus {
-  border : 1px solid #7367F0;
+  border : 1px solid #d62350;
 }
 .navbar-container .bookmark-input .search-list {
   box-shadow : 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);

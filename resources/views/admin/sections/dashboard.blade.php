@@ -15,8 +15,8 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <h1 class="mb-2 text-white">Bienvenido {{ Auth::user()->name }}</h1>
-                            <p class="m-auto w-75">Este es el panel de administración.</p>
+                            <h1 class="mb-2 text-white">Bienvenida {{ Auth::user()->name }}</h1>
+                            <p class="m-auto w-75"><b>Este es el panel de administración.</b></p>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <h2 class="text-bold-700 mt-1 mb-25">92.6k</h2>
-                    <p class="mb-0">Subscribers Gained</p>
+                    <p class="mb-0 danger">En proceso</p>
                 </div>
                 <div class="card-content"> 
                     <div id="subscribe-gain-chart"></div>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                     <h2 class="text-bold-700 mt-1 mb-25">97.5K</h2>
-                    <p class="mb-0">Orders Received</p>
+                    <p class="mb-0 danger">En proceso</p>
                 </div>
                 <div class="card-content">
                     <div id="orders-received-chart"></div>
@@ -64,13 +64,13 @@
                             <div class="col-lg-6 col-12 d-flex justify-content-between flex-column order-lg-1 order-2 mt-lg-0 mt-2">
                                 <div>
                                     <h2 class="text-bold-700 mb-25">2.7K</h2>
-                                    <p class="text-bold-500 mb-75">Avg Sessions</p>
+                                    <p class="text-bold-500 danger mb-75">En proceso</p>
                                     <h5 class="font-medium-2">
                                         <span class="text-success">+5.2% </span>
                                         <span>vs last 7 days</span>
                                     </h5>
                                 </div>
-                                <a href="#" class="btn btn-primary shadow">View Details <i class="feather icon-chevrons-right"></i></a>
+                                <a href="#" class="btn btn-danger shadow">En proceso <i class="feather icon-chevrons-right"></i></a>
                             </div>
                             <div class="col-lg-6 col-12 d-flex justify-content-between flex-column text-right order-lg-2 order-1">
                                 <div class="dropdown chart-dropdown">
@@ -120,7 +120,7 @@
         <div class="col-md-6 col-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between pb-0">
-                    <h4 class="card-title">Support Tracker</h4>
+                    <h4 class="card-title danger">En proceso</h4>
                     <div class="dropdown chart-dropdown">
                         <button class="btn btn-sm border-0 dropdown-toggle p-0" type="button" id="dropdownItem4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Last 7 Days

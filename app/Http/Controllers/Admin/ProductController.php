@@ -63,6 +63,12 @@ class ProductController extends Controller
      */
     public function store(ProductStoreRequest $request)
     {
+
+        $notification = array(
+            'message' => 'Post creado con éxito!', 
+            'alert-type' => 'success'
+        );
+
         $product = Product::create($request->all());
         $this->authorize('pass', $product);
 
@@ -75,7 +81,7 @@ class ProductController extends Controller
         //TAGS
         $product->tags()->attach($request->get('tags'));
 
-        return redirect()->route('products.edit', $product->id)->with('info', 'Entrada creada con éxito');
+        return redirect()->route('products.edit', $product->id)->with($notification);
     }
 
     /**
@@ -117,6 +123,11 @@ class ProductController extends Controller
      */
     public function update(ProductUpdateRequest $request, $id)
     {
+        $notification = array(
+            'message' => 'Post actualizado con éxito!', 
+            'alert-type' => 'warning'
+        );
+
         $product = Product::find($id);
         $this->authorize('pass', $product);
 
@@ -131,7 +142,7 @@ class ProductController extends Controller
         //TAGS
         $product->tags()->sync($request->get('tags'));
 
-        return redirect()->route('products.edit', $product->id)->with('info', 'Entrada actualizada con éxito');
+        return redirect()->route('products.edit', $product->id)->with($notification);
     }
 
     /**
@@ -142,9 +153,13 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
+        $notification = array(
+            'message' => 'Post eliminado con éxito!', 
+            'alert-type' => 'error'
+        );
         $product = Product::find($id)->delete();
         //$this->authorize('pass', $product);
 
-        return back()->with('info', 'Eliminado correctamente');
+        return back()->with($notification);
     }   
 }

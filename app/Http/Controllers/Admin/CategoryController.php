@@ -50,9 +50,14 @@ class CategoryController extends Controller
      */
     public function store(CategoryStoreRequest $request)
     {
+        $notification = array(
+            'message' => 'Categoría creada con éxito!', 
+            'alert-type' => 'success'
+        );
         $category = Category::create($request->all());
 
-        return redirect()->route('categories.edit', $category->id)->with('info', 'Categoría creada con éxito');
+        return redirect()->route('categories.edit', $category->id)->with($notification);
+
     }
 
     /**
@@ -90,11 +95,15 @@ class CategoryController extends Controller
      */
     public function update(CategoryUpdateRequest $request, $id)
     {
+        $notification = array(
+            'message' => 'Categoría actualizada con éxito!', 
+            'alert-type' => 'warning'
+        );
         $category = Category::find($id);
 
         $category->fill($request->all())->save();
 
-        return redirect()->route('categories.edit', $category->id)->with('info', 'Categoría actualizada con éxito');
+        return redirect()->route('categories.edit', $category->id)->with($notification);
     }
 
     /**
@@ -105,8 +114,13 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
+        $notification = array(
+            'message' => 'Categoría eliminada con éxito!', 
+            'alert-type' => 'error'
+        );
+
         $category = Category::find($id)->delete();
 
-        return back()->with('info', 'Eliminado correctamente');
+        return back()->with($notification);
     }
 }

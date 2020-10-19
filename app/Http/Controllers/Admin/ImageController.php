@@ -3,24 +3,22 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\TagStoreRequest;
-use App\Http\Requests\TagUpdateRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
-use App\Tag;
+use App\Image;
 
-class TagController extends Controller
+class ImageController extends Controller
 {
-        /**
+    /**
      * Create a new controller instance.
      *
      * @return void
      */
     public function __construct()
     {
-        $this->middleware('auth');
+       // $this->middleware('auth');
     }
-
     /**
      * Display a listing of the resource.
      *
@@ -28,9 +26,11 @@ class TagController extends Controller
      */
     public function index()
     {
-        $tags = Tag::orderBy('id', 'DESC')->paginate(4);
 
-        return view('admin.tags.index', compact('tags'));
+        $images = Image::orderBy('id', 'DESC')->paginate(4);
+
+
+        return view('admin.images.index', compact('images'));
     }
 
     /**
@@ -40,7 +40,7 @@ class TagController extends Controller
      */
     public function create()
     {
-        return view('admin.tags.create');
+        return view('admin.images.create');
     }
 
     /**
@@ -49,15 +49,21 @@ class TagController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(TagStoreRequest $request)
+    public function store(Request $request)
     {
         $notification = array(
-            'message' => 'Etiqueta creada con éxito!', 
+            'message' => 'Foto creada con éxito!', 
             'alert-type' => 'success'
         );
-        $tag = Tag::create($request->all());
+        
+        $image = Image::create($request->all());
 
-        return redirect()->route('tags.edit', $tag->id)->with($notification);
+        //IMAGE 
+        if($request->file('image')){
+            $path = Storage::disk('public')->put('images',  $request->file('image'));
+            $image->fill(['file' => asset($path)])->save();
+        }        
+        return redirect()->route('imagess.edit', $image->id)->with($notification);
     }
 
     /**
@@ -68,9 +74,9 @@ class TagController extends Controller
      */
     public function show($id)
     {
-        $tag = Tag::find($id);
-
-        return view('admin.tags.show', compact('tag'));
+        $image = Image::find($id);
+       
+        return view('admin.images.show', compact('image'));
     }
 
     /**
@@ -81,9 +87,8 @@ class TagController extends Controller
      */
     public function edit($id)
     {
-        $tag = Tag::find($id);
-
-        return view('admin.tags.edit', compact('tag'));
+        $image    = Image::find($id);
+        return view('admin.images.edit', compact('image'));     
     }
 
     /**
@@ -93,17 +98,24 @@ class TagController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(TagUpdateRequest $request, $id)
+    public function update(Request $request, $id)
     {
         $notification = array(
-            'message' => 'Etiqueta actualizada con éxito!', 
+            'message' => 'Foto actualizada con éxito!', 
             'alert-type' => 'warning'
         );
-        $tag = Tag::find($id);
 
-        $tag->fill($request->all())->save();
+        $image = Image::find($id);
 
-        return redirect()->route('tags.edit', $tag->id)->with($notification);
+        $image->fill($request->all())->save();
+
+        //IMAGE 
+        if($request->file('image')){
+            $path = Storage::disk('public')->put('images',  $request->file('image'));
+            $image->fill(['file' => asset($path)])->save();
+        }
+
+        return redirect()->route('imagess.edit', $image->id)->with($notification);     
     }
 
     /**
@@ -115,12 +127,13 @@ class TagController extends Controller
     public function destroy($id)
     {
         $notification = array(
-            'message' => 'Etiqueta eliminada con éxito!', 
+            'message' => 'Foto eliminada con éxito!', 
             'alert-type' => 'error'
         );
 
-        $tag = Tag::find($id)->delete();
-
+        $image = Image::find($id)->delete();
+    
         return back()->with($notification);
+      
     }
 }

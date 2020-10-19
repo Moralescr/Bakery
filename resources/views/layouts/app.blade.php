@@ -10,7 +10,8 @@
     <meta name="description" content="Visited Moralescr.tech">
     <meta name="keywords" content="web app">
     <meta name="author" content="Moralescr.">
-    <title>Welcome administrator</title>
+    
+    <title>Bienvenida {{Auth::user()->name}}</title>
     @include('admin.sections.css')
 </head>
 <body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
@@ -23,6 +24,21 @@
     <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-body">
+                @if(count($errors))            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="alert alert-success">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endif
                 @yield('content')
             </div>
         </div>
@@ -44,5 +60,29 @@
     @include('admin.sections.js')
     <!--script to slug -->
     @yield('scripts')
+
+<script>
+    @if(Session::has('message'))
+    var type = "{{ Session::get('alert-type', 'info') }}";
+    switch(type){
+        case 'info':
+            toastr.info("{{ Session::get('message') }}");
+            break;
+        
+        case 'warning':
+            toastr.warning("{{ Session::get('message') }}");
+            break;
+
+        case 'success':
+            toastr.success("{{ Session::get('message') }}");
+            break;
+
+        case 'error':
+            toastr.error("{{ Session::get('message') }}");
+            break;
+    }
+   @endif
+</script>
+    
 </body>
 </html>

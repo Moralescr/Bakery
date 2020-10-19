@@ -9,7 +9,7 @@
           
             <a href="#" title=""><i class="fa fa-facebook"></i></a>
             <a href="#" title=""><i class="fa fa-instagram"></i></a>
-            <a href="#" title=""><i class="fa fa-whatsapp"></i></a>
+            <a href="https://wa.link/m8nzoa" title=""><i class="fa fa-whatsapp"></i></a>
         </div>
     </div>
     <!-- /row -->
