@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\ImageStoreRequest;
+use App\Http\Requests\ImageUpdateRequest;
 use Illuminate\Support\Facades\Storage;
 
 use App\Image;
@@ -26,10 +28,7 @@ class ImageController extends Controller
      */
     public function index()
     {
-
         $images = Image::orderBy('id', 'DESC')->paginate(4);
-
-
         return view('admin.images.index', compact('images'));
     }
 
@@ -49,7 +48,7 @@ class ImageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ImageStoreRequest $request)
     {
         $notification = array(
             'message' => 'Foto creada con éxito!', 
@@ -58,8 +57,9 @@ class ImageController extends Controller
         
         $image = Image::create($request->all());
 
-        //IMAGE 
+        //Image
         if($request->file('image')){
+        
             $path = Storage::disk('public')->put('images',  $request->file('image'));
             $image->fill(['file' => asset($path)])->save();
         }        
@@ -75,7 +75,6 @@ class ImageController extends Controller
     public function show($id)
     {
         $image = Image::find($id);
-       
         return view('admin.images.show', compact('image'));
     }
 
@@ -87,7 +86,7 @@ class ImageController extends Controller
      */
     public function edit($id)
     {
-        $image    = Image::find($id);
+        $image = Image::find($id);
         return view('admin.images.edit', compact('image'));     
     }
 
@@ -98,7 +97,7 @@ class ImageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ImageUpdateRequest $request, $id)
     {
         $notification = array(
             'message' => 'Foto actualizada con éxito!', 
@@ -106,15 +105,13 @@ class ImageController extends Controller
         );
 
         $image = Image::find($id);
-
         $image->fill($request->all())->save();
 
-        //IMAGE 
+        //Image 
         if($request->file('image')){
             $path = Storage::disk('public')->put('images',  $request->file('image'));
             $image->fill(['file' => asset($path)])->save();
         }
-
         return redirect()->route('imagess.edit', $image->id)->with($notification);     
     }
 
@@ -130,10 +127,7 @@ class ImageController extends Controller
             'message' => 'Foto eliminada con éxito!', 
             'alert-type' => 'error'
         );
-
         $image = Image::find($id)->delete();
-    
         return back()->with($notification);
-      
     }
 }

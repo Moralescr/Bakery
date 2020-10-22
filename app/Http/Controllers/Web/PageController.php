@@ -15,7 +15,13 @@ class PageController extends Controller
     {
         //Show main page of web page
         $posts = Product::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(4);
+    
         return view('web.index', compact('posts'));
+    }
+
+    public function about()
+    {
+        return view('web.sections.about');
     }
    
     public function blog(Request $request)

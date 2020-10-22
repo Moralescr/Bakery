@@ -63,7 +63,6 @@ class ProductController extends Controller
      */
     public function store(ProductStoreRequest $request)
     {
-
         $notification = array(
             'message' => 'Post creado con éxito!', 
             'alert-type' => 'success'
@@ -74,7 +73,7 @@ class ProductController extends Controller
 
         //IMAGE 
         if($request->file('image')){
-            $path = Storage::disk('public')->put('image',  $request->file('image'));
+            $path = Storage::disk('public')->put('images',  $request->file('image'));
             $product->fill(['file' => asset($path)])->save();
         }
 
@@ -135,7 +134,7 @@ class ProductController extends Controller
 
         //IMAGE 
         if($request->file('image')){
-            $path = Storage::disk('public')->put('image',  $request->file('image'));
+            $path = Storage::disk('public')->put('images',  $request->file('image'));
             $product->fill(['file' => asset($path)])->save();
         }
 

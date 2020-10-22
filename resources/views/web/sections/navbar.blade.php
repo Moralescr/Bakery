@@ -16,7 +16,6 @@
     <div class="collapse navbar-collapse" id="navbar-brand">
         <ul class="nav navbar-nav page-scroll navbar-right">
             <li><a href="#page-top">Inicio</a></li>
-            <li><a href="#about">Acerca de</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -25,8 +24,8 @@
                 </ul>
             </li>
             <li><a href="#menu">Menú</a></li>
+            <li><a href="{{ route('about') }}">Nosotros</a></li>
             <li><a href="#gallery">Galería</a></li>
-            <li><a href="#contact">Contacto</a></li>
         </ul>
     </div>
     <!-- /.navbar-collapse -->

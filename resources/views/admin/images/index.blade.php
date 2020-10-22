@@ -34,7 +34,7 @@
                                 @if($image->file)
                                     <ul class="list-unstyled users-list m-0  d-flex align-items-center">
                                         <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="{{ $image->name }}" class="avatar pull-up">
-                                            <img class="media-object rounded-circle" src="{{$image->file}}" alt="Avatar" height="30" width="30">
+                                            <img class="media-object rounded-circle" src="{{ $image->file }}" alt="Avatar" height="30" width="30">
                                         </li>
                                     </ul>
                                 @endif

@@ -33,7 +33,7 @@
                   <p class="subtitle">"Nuestro ingrediente secreto siempre es el amor"</p>
                   <div class="page-scroll">
                      <!-- Button -->
-                     <a class="btn" href="https://wa.link/m8nzoa">
+                     <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                         <div class="btn-line"></div>
                         <div class="btn-line btn-line-shift"></div>
                         Contáctanos
@@ -71,7 +71,7 @@
                   <p class="subtitle">Ofrecemos repostería para todo tipo de eventos.</p>
                   <div class="page-scroll">
                      <!-- Button -->
-                     <a class="btn" href="https://wa.link/m8nzoa">
+                     <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                         <div class="btn-line"></div>
                         <div class="btn-line btn-line-shift"></div>
                         Contáctanos
@@ -109,7 +109,7 @@
                   <p class="subtitle">Tenenos una amplia gama de precios que se ajusta a sus necesidades.</p>
                   <div class="page-scroll">
                      <!-- Button -->
-                     <a class="btn" href="https://wa.link/m8nzoa">
+                     <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                         <div class="btn-line"></div>
                         <div class="btn-line btn-line-shift"></div>
                         Contáctanos
@@ -147,7 +147,7 @@
                   <p class="subtitle">Si deseas personalizar sus postres para una ocasión especial somos su mejor opción.</p>
                   <div class="page-scroll">
                      <!-- Button -->
-                     <a class="btn" href="https://wa.link/m8nzoa">
+                     <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                         <div class="btn-line"></div>
                         <div class="btn-line btn-line-shift"></div>
                         Contáctanos
@@ -212,7 +212,7 @@
             </p>
             <!-- Button -->
             <div class="page-scroll">
-               <a class="btn" href="https://wa.link/m8nzoa">
+               <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                   <div class="btn-line"></div>
                   <div class="btn-line btn-line-shift"></div>
                   Contactános y haz feliz a su familia
@@ -239,7 +239,7 @@
                         <p>Comparte con las personas más importantes este momento tan especial disfrutando de nuestros deliciosos postres.</p>
                         <!-- Button -->
                         <div class="page-scroll">
-                           <a class="btn" href="https://wa.link/m8nzoa">
+                           <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                               <div class="btn-line"></div>
                               <div class="btn-line btn-line-shift"></div>
                               Más información
@@ -264,7 +264,7 @@
                         <p>Endulza a tus clientes no solo con sus propuestas sino con nuestros deliciosos postres.</p>
                         <!-- Button -->
                         <div class="page-scroll">
-                           <a class="btn" href="https://wa.link/m8nzoa">
+                           <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                               <div class="btn-line"></div>
                               <div class="btn-line btn-line-shift"></div>
                               Más información
@@ -290,7 +290,7 @@
                         <!-- Button -->
                         <!-- Button -->
                         <div class="page-scroll">
-                           <a class="btn" href="https://wa.link/m8nzoa">
+                           <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                               <div class="btn-line"></div>
                               <div class="btn-line btn-line-shift"></div>
                               Más información
@@ -316,7 +316,7 @@
                            elegantes y originales, pero también deliciosos</p>
                         <!-- Button -->
                         <div class="page-scroll">
-                           <a class="btn" href="https://wa.link/m8nzoa">
+                           <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                               <div class="btn-line"></div>
                               <div class="btn-line btn-line-shift"></div>
                               Más información   
@@ -429,8 +429,10 @@
                <div class="blog-post">
                   <!-- blog image -->
                   <div class="img-zoom">
-                     <a href="blog-post.html">
-                     <img class="img-responsive" src="bakery/img/blog4.jpg" alt="">
+                     <a href="#">
+                     @if($post->file)
+                     <img class="img-responsive" src="{{ $post->file }}" alt="">
+                     @endif
                      </a>
                   </div>
                   <!-- post info -->
@@ -441,7 +443,7 @@
                             {{\Carbon\Carbon::parse($post->created_at)->isoformat('DD')}}
                             <small>{{\Carbon\Carbon::parse($post->created_at)->isoformat('MMMM')}}</small>
                         </li>
-                        <li><i class="fa fa-comments-o"></i><a href="blog-post.html"><small>0</small></a></li>
+                        <li><i class="fa fa-comments-o"></i><a href="#"><small>0</small></a></li>
                      </ul>
                      <!-- Title -->
                      <h4 class="post-title">
@@ -653,7 +655,7 @@
             <p>Estamos seguro que la disfrutarás al máximo al lado de su familia. No sigas dudando y haz tu pedido.</p>
             <!-- Button -->
             <div class="page-scroll">
-               <a class="btn" href="https://wa.link/m8nzoa">
+               <a class="btn" target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?">
                   <div class="btn-line"></div>
                   <div class="btn-line btn-line-shift"></div>
                   Envíar mensaje
