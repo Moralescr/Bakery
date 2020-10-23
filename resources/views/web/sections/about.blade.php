@@ -120,16 +120,17 @@
         <!--/owl-icons-->
         <div class="row">
             <div class="col-lg-4 box">
-                <h6>Fundadora: Alejandra Mora</h6>
+                <h6>Valores de la empresa</h6>
                 <ul class="no-margin">
-                    <li>Aliquam erat volut pat. </li>
-                    <li>Ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac
-                    sodales felis
-                    </li>
-                    <li>Aliquam erat volut pat phas ellu, lorem ipsuet.</li>
-                    <li>Lorem ipsum Aliquam erat volut pat phas ellu lorem ipsuet.</li>
-                    <li>Ipsum Aliquam erat volut pat phas ellu lorem ipsuet Ibu lum orci eget, Aliquam erat volut pat phas ellus ac viverra elit.</li>
-                    <li>Aliquam erat volut pat phas ellu, lorem ipsuet.</li>
+                    <p>Para nosotros nuestros clientes son parte muy importante
+                       de nuestra empresa por lo que contamos con algunos valores
+                        que nos garantiza que prueben nuestros productos más una vez.
+                     </p>
+                    <li>Responsabilidad</li>
+                    <li>Pasión</li>
+                    <li>Confianza</li>
+                    <li>Respeto</li>
+                    <li>Honestidad</li>
                 </ul>
             </div>
             <!-- /col-lg-7 -->
@@ -182,7 +183,7 @@
         <div class="container">
         <!-- Section Heading -->
         <div class="section-heading">
-            <h2>Equipo de trabajo</h2>
+            <h3>Fundadora de Ale's Cake</h3>
             <div class="hr"></div>
         </div>
             <!-- Team member 1 -->	
@@ -204,14 +205,11 @@
             <div class="col-lg-12 box text-center">
                 <h6>Ale's Cake - 2020</h6>
                 <ul class="no-margin">
-                    <li>Aliquam erat volut pat. </li>
-                    <li>Ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac
-                    sodales felis
-                    </li>
-                    <li>Aliquam erat volut pat phas ellu, lorem ipsuet.</li>
-                    <li>Lorem ipsum Aliquam erat volut pat phas ellu lorem ipsuet.</li>
-                    <li>Ipsum Aliquam erat volut pat phas ellu lorem ipsuet Ibu lum orci eget, Aliquam erat volut pat phas ellus ac viverra elit.</li>
-                    <li>Aliquam erat volut pat phas ellu, lorem ipsuet.</li>
+                "Somos una empresa de repostería fina que produce y comercializa productos de alta calidad.
+                Estamos comprometidos la atención a los detalles de nuestros productos y servicios para convertir los encuentros, 
+                celebraciones familiares y empresariales de nuestros clientes en momentos memorables.
+                Todos nuestros productos están inspirados en la ¡PASIÓN POR EL BUEN GUSTO! Nos encanta generar EXPERIENCIAS a
+                 través de los sentidos" 
                 </ul>
             </div>
         </div>
@@ -220,41 +218,8 @@
     
     <!-- Section Newsletter-->
     <section id="newsletter" class="color-section" data-0="background-position:0px -40px;" data-end="background-position:1000px -40px;">
-        <div class="container">
-        <div class="col-lg-7 pull-left">
-            <h3>Sign-up to receive our newsletter</h3>
-        </div>
-        <div class="col-lg-5 pull-right">
-            <!-- Form -->				
-            <div id="mc_embed_signup">
-                <form action="http://ingridkuhn.us12.list-manage.com/subscribe/post?u=04e646927a196552aaee78a7b&amp;id=0dae358e08" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                    <div class="mc-field-group">
-                        <div class="input-group">
-                            <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Your email here" id="mce-EMAIL">
-                            <span class="input-group-btn">
-                            <button class="btn" type="submit" value="Subscribe" name="subscribe"  id="mc-embedded-subscribe">
-                                <div class="btn-line"></div>
-                                <div class="btn-line btn-line-shift"></div>
-                                Subscribe
-                                </button>
-                            </span>
-                        </div>
-                        <!-- Subscription results -->
-                        <div id="mce-responses" class="mailchimp">
-                            <div class="alert alert-danger response" id="mce-error-response"></div>
-                            <div class="alert alert-success response" id="mce-success-response"></div>
-                        </div>
-                    </div>
-                    <!-- /mc-fiel-group -->									
-                    </div>
-                    <!-- /mc_embed_signup_scroll -->
-                </form>
-                <!-- /form ends -->
-            </div>
-            <!-- /mc_embed_signup -->			
-        </div>
-        <!-- /col-ms-5 -->
+        <div class="container text-center">         
+          <h4>"Nuestro ingrediente secreto siempre es el amor"</h4>
         </div>
         <!-- /.container -->
     </section>
@@ -266,19 +231,21 @@
         <div class="col-lg-7 col-md-7">
             <!-- Section heading -->
             <div class="section-heading">
-                <h2>Contact Us</h2>
+                <h3>¿Desea que sus eventos sean geniales?</h3>
                 <div class="hr"></div>
             </div>
         </div>
         <!-- Contact Form -->
         <div class="row">
             <div class="col-lg-7 col-md-7 text-center">
-                <h4>Get in touch with us</h4>
-                <p>Consectetur adipiscing elit Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia.</p>
+                <h4>Contáctanos</h4>
+                <p> 
+                   <strong>Solo para cotizaciones de eventos masivos.</strong>
+                </p>
                 <ul class="contact-info">
-                    <li><i class="fa fa-map-marker"></i>Imaginary cake City 2002</li>
-                    <li><i class="fa fa-phone"></i>+00 (0) 1234 5678</li>
-                    <li><i class="fa fa-envelope"></i><a href="mailto:email@company.com">email@company.com</a> </li>
+                    <li><i class="fa fa-map-marker"></i>Nicoya, Guanacaste, Costa Rica</li>
+                    <li><i class="fa fa-phone"></i>+506 8540 7167</li>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:email@company.com">info@alescakecr.com</a> </li>
                 </ul>
                 <div class="form-style" id="contact_form">
                     <!-- Contact results -->
@@ -286,15 +253,15 @@
                     <!-- Form Starts -->
                     <div class="form-group">
                     
-                    <input type="text" name="name" class="form-control input-field" placeholder="Name" required="">                    
-                    <input type="email" name="email" class="form-control input-field" placeholder="Email ID" required="">           
-                    <input type="text" name="subject" class="form-control input-field" placeholder="Subject">                                          
-                    <textarea name="message" id="message" class="textarea-field form-control" rows="4" placeholder="Enter your message" required=""></textarea>
+                    <input type="text" name="name" class="form-control input-field" placeholder="Nombre" required="">                    
+                    <input type="email" name="email" class="form-control input-field" placeholder="Correo electrónico" required="">           
+                    <input type="text" name="subject" class="form-control input-field" placeholder="Teléfono">                                          
+                    <textarea name="message" id="message" class="textarea-field form-control" rows="4" placeholder="Escribe su mensaje" required=""></textarea>
                     <!-- Button -->
                     <a class="btn" href="#contact" id="submit_btn">
                         <div class="btn-line"></div>
                         <div class="btn-line btn-line-shift"></div>
-                        Send Message
+                        Enviar mensaje
                     </a>
                     </div>
                 </div>

@@ -15,13 +15,13 @@
                         <strong>En este apartado solo se muestran las fotos subidas por el usuario.</strong> 
                     </div>
                     <a href="{{ route('imagess.create') }}" class="pull-right btn btn-sm btn-success">
-                        Crear
+                       Subir foto
                     </a>
-                    <h4 class="card-title">Lista de publicaciones</h4>
+                    <h4 class="card-title">Lista de fotografías</h4>
                     <table class="table table-responsive-xl table-hover-animation mb-1">
                         <thead>
                             <tr>
-                                <th>Nombre</th>
+                                <th>Título</th>
                                 <th>Foto</th>
                                 <th colspan="3">Acciones</th>
                             </tr>

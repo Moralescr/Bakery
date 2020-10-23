@@ -8,7 +8,7 @@
         <div class="social-media">
             <a href="#" title=""><i class="fa fa-facebook"></i></a>
             <a target="_blank" href="https://instagram.com/ales_cake__?igshid=fptj68vboudi" title=""><i class="fa fa-instagram"></i></a>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=85407167&text=Muchas%20gracias%20por%20escribir%20a%20Ale%C2%B4s%20Cake.%20%C2%BFEn%20qu%C3%A9%20le%20podemos%20ayudar?" title=""><i class="fa fa-whatsapp"></i></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=50685407167&text=Me%20interesan%20sus%20postres" title=""><i class="fa fa-whatsapp"></i></a>
         </div>
     </div>
     <!-- /row -->
