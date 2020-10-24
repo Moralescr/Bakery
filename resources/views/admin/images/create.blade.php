@@ -11,7 +11,7 @@
                 </a>
             </div>
             <div class="card-body">
-                {!! Form::open(['route' => 'imagess.store', 'files' => true]) !!}
+                {!! Form::open(['route' => 'imagess.store','method'=> 'POST', 'files' => true]) !!}
                     
                     @include('admin.images.partials.form')
 

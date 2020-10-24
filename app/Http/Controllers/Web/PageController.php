@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Product;
 use App\Category;
 use App\Tag;
+use App\Image;
 
 class PageController extends Controller
 {
@@ -22,6 +23,12 @@ class PageController extends Controller
     public function about()
     {
         return view('web.sections.about');
+    }
+
+    public function gallery()
+    {
+        $images = Image::orderBy('created_at', 'DESC')->paginate(6);
+        return view('web.sections.gallery', compact('images'));
     }
    
     public function blog(Request $request)

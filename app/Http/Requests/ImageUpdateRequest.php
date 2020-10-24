@@ -25,6 +25,7 @@ class ImageUpdateRequest extends FormRequest
     {
        $rules = [
             'name' => 'required',
+            'category' => 'required', 
         ];
 
         if($this->get('image'))        

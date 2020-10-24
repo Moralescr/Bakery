@@ -16,6 +16,8 @@
     {{ Form::label('image', 'Imagen') }}
     {{ Form::file('image') }}
 </div>
+<img id="image" src="{{$product->file}}" width="150px" height="100px" alt="">
+<br><br>
 <div class="form-group">
 	{{ Form::label('slug', 'Estado') }}
 	<label>
@@ -64,4 +66,9 @@
 		CKEDITOR.replace('body');
 	});
 </script>
+<style>
+#image {
+	border-radius:10px;
+}
+</style>
 @endsection

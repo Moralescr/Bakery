@@ -9,6 +9,7 @@ use App\Http\Requests\ImageUpdateRequest;
 use Illuminate\Support\Facades\Storage;
 
 use App\Image;
+use App\Category;
 
 class ImageController extends Controller
 {
@@ -39,7 +40,9 @@ class ImageController extends Controller
      */
     public function create()
     {
-        return view('admin.images.create');
+        $image = null;
+
+        return view('admin.images.create', compact('image'));
     }
 
     /**

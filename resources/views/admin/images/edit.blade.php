@@ -16,8 +16,14 @@
                     @include('admin.images.partials.form')
 
                 {!! Form::close() !!}
+                
             </div>
         </div>
     </div>
 </div>
+<style>
+    #image {
+        border-radius:10px;
+    }
+</style>
 @endsection

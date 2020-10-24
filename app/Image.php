@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 class Image extends Model
 {
     protected $fillable = [
-        'name', 'file'
+        'name', 'file', 'category'
     ];
 
 }

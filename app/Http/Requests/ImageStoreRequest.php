@@ -24,7 +24,8 @@ class ImageStoreRequest extends FormRequest
     public function rules()
     {
        $rules = [
-            'name' => 'required',           
+            'name' => 'required',   
+            'category' => 'required',          
         ];
 
         if($this->get('image'))        
