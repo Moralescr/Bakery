@@ -16,7 +16,9 @@
     {{ Form::label('image', 'Imagen') }}
     {{ Form::file('image') }}
 </div>
+@if($image != null)
 <img id="image" src="{{$product->file}}" width="150px" height="100px" alt="">
+@endif
 <br><br>
 <div class="form-group">
 	{{ Form::label('slug', 'Estado') }}

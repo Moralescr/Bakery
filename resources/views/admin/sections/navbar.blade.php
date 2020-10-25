@@ -84,7 +84,7 @@
                             @endif
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                         <a class="dropdown-item" href="#"><i class="feather icon-user"></i> Editar Perfil</a>
+                         <a class="dropdown-item" href="{{ route('user.index')}}"><i class="feather icon-user"></i> Editar Perfil</a>
                          <!--<a class="dropdown-item" href="#"><i class="feather icon-mail"></i> My Inbox</a>
                          <a class="dropdown-item" href="#"><i class="feather icon-check-square"></i> Task</a>
                          <a class="dropdown-item" href="#"><i class="feather icon-message-square"></i> Chats</a> -->

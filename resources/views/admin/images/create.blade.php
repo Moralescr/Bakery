@@ -13,7 +13,7 @@
             <div class="card-body">
                 {!! Form::open(['route' => 'imagess.store','method'=> 'POST', 'files' => true]) !!}
                     
-                    @include('admin.images.partials.form')
+                    @include('admin.images.partials.formcreate')
 
                 {!! Form::close() !!}
             </div>

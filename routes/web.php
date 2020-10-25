@@ -29,4 +29,6 @@ Route::resource('tags', 'Admin\TagController');
 Route::resource('categories', 'Admin\CategoryController');
 Route::resource('products', 'Admin\ProductController');
 Route::resource('imagess', 'Admin\ImageController');
+Route::resource('user', 'Admin\UserController');
+
 Route::get('dashboard', 'Admin\ProductController@dashboard')->name('dashboard');

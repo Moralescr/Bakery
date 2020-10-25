@@ -25,7 +25,7 @@
             </li>
             <li><a href="#menu">Menú</a></li>
             <li><a href="{{ route('about') }}">Nosotros</a></li>
-            <li><a href="#gallery">Galería</a></li>
+            <li><a href="{{route('gallery')}}">Galería</a></li>
         </ul>
     </div>
     <!-- /.navbar-collapse -->

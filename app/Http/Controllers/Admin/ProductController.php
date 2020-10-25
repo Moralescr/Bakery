@@ -51,8 +51,8 @@ class ProductController extends Controller
     {
         $categories = Category::orderBy('name', 'ASC')->pluck('name', 'id');
         $tags       = Tag::orderBy('name', 'ASC')->get();
-
-        return view('admin.products.create', compact('categories', 'tags'));
+        $image = null;
+        return view('admin.products.create', compact('categories', 'tags', 'image'));
     }
 
     /**

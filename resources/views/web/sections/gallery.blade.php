@@ -25,9 +25,9 @@
             <!-- Navigation -->
             <div class="text-center col-md-12">
                <ul class="nav nav-pills cat text-center" role="tablist" id="gallerytab">
-                  <li class="active"><a href="#" data-toggle="tab" data-filter="*">Todas</a>
-                  <li><a href="#" data-toggle="tab" data-filter=".Queques">Cakes & Pies</a></li>
-                  <li><a href="#" data-toggle="tab" data-filter=".sweets">Otros dulces</a></li>
+                  <li class="active"><a href="#" data-toggle="tab" data-filter="*">Todos</a>
+                  <li><a href="#" data-toggle="tab" data-filter=".Queques">Queques & Pies</a></li>
+                  <li><a href="#" data-toggle="tab" data-filter=".Cupcakes">Cupcakes & otros</a></li>
                </ul>
             </div>
             <!-- Gallery -->
@@ -35,19 +35,12 @@
                <div class="col-md-12 wow fadeInUp">
                   <div id="lightbox">
                      @foreach($images as $image)
-                     <!-- Image 1 -->
-                     <div class="{{$image->category}} col-lg-4 col-sm-6 col-md-6">
-                        <div class="isotope-item">
-                           <div class="gallery-thumb">
-                              @if($image->file)
-                              <img class="img-responsive" src="{{$image->file}}" alt="">
-                              <a href="{{$image->file}}" data-gal="prettyPhoto[gallery]"  title="{{$image->name}}">
-                              <span class="overlay-mask"></span>
-                              </a>	
-                              @endif						  							  
+                        <div class="{{$image->category}}  col-md-4">
+                           <div class="polaroid">
+                              <p>{{$image->name}}</p>
+                              <img src="{{$image->file}}" alt="" class="img-responsive center-block" />
                            </div>
                         </div>
-                     </div>
                      @endforeach
                   </div>
                   <!-- /lightbox-->
