@@ -36,7 +36,7 @@
                 </div>
             </div>
             <!-- users edit media object ends -->
-            <form method="PUT" action="{{ route('user.update', $user->id) }}" enctype="multipart/form-data" files="true">
+            <form role="form" method="PUT" action="{{ route('users.update', $user->id) }}" enctype="multipart/form-data">
             @csrf
             <!-- users edit account form start -->
                 <div class="row">
@@ -67,13 +67,13 @@
                         </div>
                         <div class="form-group">
                             <div class="controls">
-                                <label>E-mail</label>
-                                <input id="password" name="password"  type="password" class="form-control" placeholder="Email" value="{{$user->password}}" required data-validation-required-message="This email field is required">
+                                <label>Contraseña</label>
+                                <input id="password" name="password"  type="password" class="form-control" placeholder="Contraseña" value="{{$user->password}}" required data-validation-required-message="This email field is required">
                             </div>
                         </div>
                     </div>
                     <div class="col-12 d-flex flex-sm-row flex-column justify-content-start mt-1">
-                        <button class="btn btn-outline-warning" type="submit">Actualizar</button>
+                        <button class="btn btn-outline-warning" name="submit" type="submit">Actualizar</button>
                     </div>
                 </div>
             </form>

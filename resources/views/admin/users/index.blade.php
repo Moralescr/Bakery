@@ -35,7 +35,7 @@
                     <div class="col-12 d-flex mt-1 px-0">
                         <a href="#" class="btn btn-danger">Fundadora Ale's Cake</a>
                         &nbsp;&nbsp;
-                        <a href="{{ route('user.edit', $user->id) }}" class="btn btn-outline-warning ">Editar</a>
+                        <a href="{{ route('users.edit', $user->id) }}" class="btn btn-outline-warning ">Editar</a>
                     </div>
                 </div>
             </div>

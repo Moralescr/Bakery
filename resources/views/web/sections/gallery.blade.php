@@ -44,6 +44,7 @@
                      @endforeach
                   </div>
                   <!-- /lightbox-->
+                  {{ $images->render() }} 
                </div>
                <!-- /col-md-12-->
             </div>
