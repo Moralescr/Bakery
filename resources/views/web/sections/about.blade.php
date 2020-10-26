@@ -195,9 +195,9 @@
                 <h4>Alejandra Mora</h4>
                 <h6>Fundadora</h6>   
                 <div class="social-media smaller">
-                <a href="#" title=""><i class="fa fa-whatsapp"></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=50685407167&text=Me%20interesan%20sus%20postres" title=""><i class="fa fa-whatsapp"></i></a>
                 <a href="#" title=""><i class="fa fa-facebook"></i></a>
-                <a href="#" title=""><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://instagram.com/ales_cake__?igshid=fptj68vboudi" title=""><i class="fa fa-instagram"></i></a>
                 </div>   
             </div>
         </div>

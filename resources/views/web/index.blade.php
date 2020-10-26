@@ -446,11 +446,11 @@
                         <li><i class="fa fa-comments-o"></i><a href="#"><small>0</small></a></li>
                      </ul>
                      <!-- Title -->
-                     <h4 class="post-title">
+                     <h4 class="post-title text-justify">
                         <a href="{{ route('post', $post->slug)}}">{{$post->name}}</a>
                      </h4>
                      <!-- Description -->
-                     <p class="post-description">
+                     <p class="post-description text-justify">
                         {{$post->excerpt}}
                      </p>
                      <!-- Button -->

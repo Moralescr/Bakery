@@ -23,9 +23,13 @@
                 <li><a href="{{ route('blog') }}">Publicaciones</a></li>
                 </ul>
             </li>
-            <li><a href="#menu">Menú</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="">Menú<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                <li><a href="{{route('gallery')}}">Postres</a></li>
+                </ul>
+            </li>
             <li><a href="{{ route('about') }}">Nosotros</a></li>
-            <li><a href="{{route('gallery')}}">Galería</a></li>
         </ul>
     </div>
     <!-- /.navbar-collapse -->
