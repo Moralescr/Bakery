@@ -42,11 +42,11 @@
                 </div>
                 <!-- /post-info -->	
                 <!-- Post Content -->
-                <blockquote>Men dolor sit amet, consectetur adipisiras sit amet nibh libero, in gravida nulla ulla vel metus scelerisque ante sollicitudin commodo cras purus.</blockquote>
-                <p>
+                <blockquote style="color:#e7263e">Nuestro ingrediente secreto siempre es el amor</blockquote>
+                <p class="text-justify">
                     {{ $post->excerpt}}
                 </p>
-                <p>
+                <p class="text-justify">
                    {!! $post->body !!}
                 </p>
                 </div>

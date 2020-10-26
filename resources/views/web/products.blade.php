@@ -23,9 +23,11 @@
                <div class="blog-post">
                   <!-- blog image -->
                   <div class="img-zoom">
-                     <a href="blog-post.html">
-                     <img class="img-responsive" src="bakery/img/blog4.jpg" alt="">
+                     @if($post->file)
+                     <a href="#">
+                     <img class="img-responsive" src="{{$post->file}}" alt="">
                      </a>
+                     @endif
                   </div>
                   <!-- post info -->
                   <div class="post-review">
@@ -38,11 +40,11 @@
                         <li><i class="fa fa-comments-o"></i><a href="#"><small>0</small></a></li>
                      </ul>
                      <!-- Title -->
-                     <h4 class="post-title">
+                     <h4 class="post-title text-justify">
                         <a href="{{route('post', $post->slug)}}">{{$post->name}}</a>
                      </h4>
                      <!-- Description -->
-                     <p class="post-description">
+                     <p class="post-description text-justify">
                         {{$post->excerpt}}
                      </p>
                      <!-- Button -->
