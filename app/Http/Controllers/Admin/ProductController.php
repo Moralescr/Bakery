@@ -105,12 +105,13 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
+        $image = null;
         $categories = Category::orderBy('name', 'ASC')->pluck('name', 'id');
         $tags       = Tag::orderBy('name', 'ASC')->get();
         $product    = Product::find($id);
         $this->authorize('pass', $product);
 
-        return view('admin.products.edit', compact('product', 'categories', 'tags'));
+        return view('admin.products.edit', compact('product', 'categories', 'tags', 'image'));
     }
 
     /**
