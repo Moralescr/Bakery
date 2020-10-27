@@ -38,7 +38,7 @@
                         <div class="{{$image->category}} col-md-4">
                            <div class="polaroid">
                               <p>{{$image->name}}</p>
-                              <img src="{{$image->file}}" alt="" class="center-block" />
+                              <img src="{{$image->file}}" alt="" class="img-responsive center-block" />
                            </div>
                         </div>
                      @endforeach
