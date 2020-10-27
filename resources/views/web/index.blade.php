@@ -507,7 +507,7 @@
                      <div class="col-md-6">
                         <div class="polaroid">
                            <p>Queque de chocolate</p>
-                           <img src="bakery/img/menu1.jpg" alt="" class="img-responsive center-block" />
+                           <img src="bakery/img/menu1.jpg" alt="" class="center-block" />
                         </div>
                      </div>
                      <!-- /col-md-6 -->	

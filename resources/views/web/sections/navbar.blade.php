@@ -16,20 +16,15 @@
     <div class="collapse navbar-collapse" id="navbar-brand">
         <ul class="nav navbar-nav page-scroll navbar-right">
             <li><a href="#page-top">Inicio</a></li>
+            <li><a href="{{ route('about') }}">Nosotros</a></li>
+            <li><a href="{{route('gallery')}}">Nuestros postres</a></li>
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<b class="caret"></b></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nuestro blog<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                 <li><a href="#blog-preview">Recientes</a></li>
                 <li><a href="{{ route('blog') }}">Publicaciones</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="">Menú<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                <li><a href="{{route('gallery')}}">Postres</a></li>
-                </ul>
-            </li>
-            <li><a href="{{ route('about') }}">Nosotros</a></li>
         </ul>
     </div>
     <!-- /.navbar-collapse -->
