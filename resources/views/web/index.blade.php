@@ -506,8 +506,8 @@
                      <!-- column -->
                      <div class="col-md-6">
                         <div class="polaroid">
-                           <p>Queque de chocolate</p>
                            <img src="bakery/img/menu1.jpg" alt="" class="img-responsive center-block" />
+                           <p>Queque de chocolate</p>
                         </div>
                      </div>
                      <!-- /col-md-6 -->	
@@ -572,8 +572,8 @@
                      <!-- column -->
                      <div class="col-md-6">
                         <div class="polaroid">
-                           <p>Cupcakes, Chilenitas</p>
                            <img src="bakery/img/menu2.jpg" alt="" class="img-responsive center-block" />
+                           <p>Cupcakes, Chilenitas</p>
                         </div>
                      </div>
                      <!-- /col-md-6 -->	
