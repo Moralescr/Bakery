@@ -35,10 +35,10 @@
                <div class="col-md-12 wow fadeInUp">
                   <div id="lightbox">
                      @foreach($images as $image)
-                        <div class="col-md-4">
+                        <div class="{{$image->category}} col-md-4">
                            <div class="polaroid">
-                              <p>{{$image->name}}</p>
                               <img src="{{$image->file}}" alt="" class="img-responsive center-block" />
+                              <p>{{$image->name}}</p>
                            </div>
                         </div>
                      @endforeach
