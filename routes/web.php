@@ -12,7 +12,7 @@
 */
 //Route::redirect('/', 'index');
 
-Auth::routes();
+//Auth::routes();
 
 //Front-end routes
 Route::get('/', 'Web\PageController@index')->name('index');
