@@ -4,7 +4,7 @@
 <section id="blog-main">
     <div class="jumbotron"></div>
     <div class="page-title" data-0="background-position:98% 40px,2% 40px;" data-end="background-position:98% -400px,2% -400px">
-    <h1>Nuestro blog</h1>
+    <h3 style="color:white">Nuestro blog</h3>
     <!-- breadcrumb --> 
     <ul class="breadcrumb">
         <li><a href="{{ route('index')}}">Inicio</a> <span class="divider"></span></li>
