@@ -443,12 +443,13 @@ $(window).on("load", function () {
   // Sales Chart ends //
 
   /***** TOUR ******/
-  var tour = new Shepherd.Tour({
+  /*var tour = new Shepherd.Tour({
     classes: 'shadow-md bg-purple-dark',
     scrollTo: true
-  })
+  })*/
 
   // tour steps
+  /*
   tour.addStep('step-1', {
     text: 'Toggle Collapse Sidebar.',
     attachTo: '.modern-nav-toggle .collapse-toggle-icon bottom',
@@ -556,6 +557,6 @@ $(window).on("load", function () {
   }
   $(window).on("resize", function () {
     tour.cancel()
-  })
+  }) */
 
 });
