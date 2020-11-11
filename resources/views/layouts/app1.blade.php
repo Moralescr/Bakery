@@ -41,6 +41,10 @@
    <link rel="alternate stylesheet" type="text/css" href="{{ asset('bakery/styles/pastel.css') }}" title="pastel" media="all" />
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <a href="https://api.whatsapp.com/send?phone=50685407167&text=Me%20interesan%20sus%20postres" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
     @include('web.sections.navbar')
       
     @yield('content')

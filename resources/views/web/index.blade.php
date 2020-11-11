@@ -1,5 +1,5 @@
 @extends('layouts.app1')
-@section('content')      
+@section('content')   
 <!-- Slider -->
 <div class="slider-container">
    <!-- Controls -->
