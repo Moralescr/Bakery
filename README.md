@@ -12,7 +12,7 @@
 
 <img width="1252" alt="login" src="https://user-images.githubusercontent.com/42954578/108156911-2c4c9d80-70a7-11eb-8279-7502938851a4.png">
 
-# Dashboard (development)
+## Dashboard (development)
 
 <img width="1298" alt="Dashboard" src="https://user-images.githubusercontent.com/42954578/108157703-fad4d180-70a8-11eb-884a-45f12ed5c846.png">
 
