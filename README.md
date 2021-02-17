@@ -1,3 +1,5 @@
+<h1 align="center">Hi 👋, welcome to Ale's Cake project</h1>
+
 ## Home page
 
 <img width="1324" src="https://user-images.githubusercontent.com/42954578/108154900-7b90cf00-70a3-11eb-8d15-2044514e54a8.png">
@@ -10,9 +12,9 @@
 
 <img width="1252" alt="login" src="https://user-images.githubusercontent.com/42954578/108156911-2c4c9d80-70a7-11eb-8279-7502938851a4.png">
 
-## Dashboard (development)
+# Dashboard (development)
 
-<img width="1327" alt="dashboard" src="https://user-images.githubusercontent.com/42954578/108157129-a3823180-70a7-11eb-83f4-d40f57f00341.png">
+<img width="1298" alt="Dashboard" src="https://user-images.githubusercontent.com/42954578/108157703-fad4d180-70a8-11eb-884a-45f12ed5c846.png">
 
 ## Upload file
 
