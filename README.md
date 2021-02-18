@@ -16,6 +16,6 @@
 
 <img width="1298" alt="Dashboard" src="https://user-images.githubusercontent.com/42954578/108157703-fad4d180-70a8-11eb-884a-45f12ed5c846.png">
 
-## Upload file
+## Upload picture
 
 <img width="1310" alt="upload picture" src="https://user-images.githubusercontent.com/42954578/108157217-da584780-70a7-11eb-8c3b-2b8224602c46.png">
