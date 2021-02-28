@@ -3,7 +3,7 @@
     <div class="container">
     <!-- social media and logo -->
     <div class="row">
-        <a href="#page-top"><img src="bakery/img/logo.png"  alt="" class="img-responsive center-block"></a>
+        <a href="#page-top"><img src="{{ asset('bakery/img/logo.png') }}"  alt="" class="img-responsive center-block"></a>
         <!-- social-icons -->	
         <div class="social-media">
             <a href="#" title=""><i class="fa fa-facebook"></i></a>
